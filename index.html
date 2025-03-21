@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudoku Generator</title>
+  <link rel="stylesheet" href="public/css/style.css" />
+</head>
+
+<body>
+  <div class="container print:hidden">
+    <div>
+      <label for="sudoku-generator-options">Grid
+        <select name="sudoku-generator-options" id="sudoku-generator_options" class="bg-blue-600 px-10 text-white">
+          <option value="4">4</option>
+          <option value="9">9</option>
+        </select>
+      </label>
+      <select id="sudoku-generator_level" class="bg-blue-600">
+        <option value="easy">Esay</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="sudoku-generator" class="border-2 px-2">Generator</button>
+      <button id="sudoku-show_ans" class="border-2 px-2">Show Answer</button>
+    </div>
+  </div>
+  <div id="container" class="grid mx-auto print:mx-0"></div>
+  <script src="public/js/sudoku.js"></script>
+</body>
+
+</html>

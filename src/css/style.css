@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@media print {
+  @page {
+    size: 74mm 100mm;
+    margin: 0;
+  }
+  .sudoku_template {
+    margin: 0;
+  }
+}
+
+/* a7 paper size = 74 x 105 mm */
+.sudoku_table-9 {
+  @apply w-full border-4 font-semibold  font-mono text-[14pt];
+  td {
+    @apply border text-center;
+  }
+  td:nth-child(3n) {
+    @apply border-r-4;
+  }
+  tr:nth-child(3n) td {
+    @apply border-b-4;
+  }
+}
+
+.sudoku_table-4 {
+  @apply w-[50mm] h-[50mm] border-4 font-semibold font-mono;
+  td {
+    @apply border text-center;
+  }
+  td:nth-child(2n) {
+    @apply border-r-4;
+  }
+  tr:nth-child(2n) td {
+    @apply border-b-4;
+  }
+}
