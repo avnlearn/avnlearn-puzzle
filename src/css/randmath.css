@@ -1,0 +1,33 @@
+#Random_Question_form {
+    tr {
+      @apply max-md:grid max-md:text-center;
+      input[type="number"],
+      input[type="text"],
+      select {
+        @apply max-md:w-1/2;
+      }
+    }
+  
+    th {
+      @apply text-right pr-2 max-md:text-center;
+    }
+  }
+  
+  .page-a7 {
+    @apply border-2 w-[74mm] px-1 print:border-0;
+    .header > h2 {
+      @apply text-center font-semibold text-[12pt];
+    }
+    /* .header > .name-tag::after {
+      content: " .....................................";
+    } */
+    ol {
+      @apply pl-[1.8em];
+      li {
+        @apply list-decimal list-outside;
+      }
+    }
+    .katex {
+      @apply text-[14pt];
+    }
+  }

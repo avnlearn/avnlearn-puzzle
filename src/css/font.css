@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Condensed.ttf') format('truetype');
+    font-weight: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedLight.ttf') format('truetype');
+    font-weight: 300;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-CondensedThin.ttf') format('truetype');
+    font-weight: 100;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedLight.ttf') format('truetype');
+    font-weight: 300;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraCondensedThin.ttf') format('truetype');
+    font-weight: 100;
+    font-stretch: extra-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensed.ttf') format('truetype');
+    font-weight: normal;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedLight.ttf') format('truetype');
+    font-weight: 300;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedSemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-SemiCondensedThin.ttf') format('truetype');
+    font-weight: 100;
+    font-stretch: semi-condensed;
+}
+
+@font-face {
+    font-family: 'Noto Sans Devanagari';
+    src: url('/static/assets/fonts/NotoSansDevanagari-v2.006/NotoSansDevanagari/full/ttf/NotoSansDevanagari-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+/* Example usage */
+body {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+h1 {
+    font-weight: bold; /* This will use the bold version */
+}
+
+h2 {
+    font-weight: 600; /* This will use the semi-bold version */
+}
+
+p {
+    font-weight: normal; /* This will use the regular version */
+}
+
+.light-text {
+    font-weight: 300; /* This will use the light version */
+}
+
+.thin-text {
+    font-weight: 100; /* This will use the thin version */
+}
+
+.condensed {
+    font-stretch: condensed; /* This will apply the condensed style */
+}
+
+.extra-condensed {
+    font-stretch: extra-condensed; /* This will apply the extra-condensed style */
+}
+
+.semi-condensed {
+    font-stretch: semi-condensed; /* This will apply the semi-condensed style */
+}

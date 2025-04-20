@@ -1,4 +1,5 @@
 {
-    "/public/js/wordsearch.js": "/public/js/wordsearch.js",
-    "/public/js/sudoku.js": "/public/js/sudoku.js"
+    "/avn_puzzle/static/assets/js/app_sudoku.js": "/avn_puzzle/static/assets/js/app_sudoku.js",
+    "/avn_puzzle/static/assets/js/app_wordsearch.js": "/avn_puzzle/static/assets/js/app_wordsearch.js",
+    "/avn_puzzle/static/assets/js/app_randmath.js": "/avn_puzzle/static/assets/js/app_randmath.js"
 }

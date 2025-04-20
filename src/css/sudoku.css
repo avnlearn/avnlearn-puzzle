@@ -1,0 +1,49 @@
+/* a7 paper size = 74 x 105 mm */
+.sudoku_container-9 {
+  @apply w-[74mm] h-[100mm] border-2 print:border-0  text-[14pt] font-sans px-2;
+  .title {
+    @apply text-center font-black;
+  }
+  .sudoku {
+    @apply w-full border-4 font-bold;
+    td {
+      @apply border text-center;
+    }
+
+    td:nth-child(3n) {
+      @apply border-r-4;
+    }
+
+    tr:nth-child(3n) td {
+      @apply border-b-4;
+    }
+  }
+}
+
+.sudoku_container-4 {
+  @apply border-2 w-[74mm] h-[100mm] px-2 print:border-0;
+
+  .title {
+    @apply text-center text-xl;
+  }
+
+  .name {
+    @apply font-extrabold py-1;
+  }
+
+  .sudoku {
+    @apply w-full border-4 font-semibold font-mono text-5xl;
+
+    td {
+      @apply border text-center;
+    }
+
+    td:nth-child(2n) {
+      @apply border-r-4;
+    }
+
+    tr:nth-child(2n) td {
+      @apply border-b-4;
+    }
+  }
+}

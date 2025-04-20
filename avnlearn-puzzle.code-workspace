@@ -27,6 +27,7 @@
 			"csharp": "scriptcs",
 			"vbscript": "cscript //Nologo",
 			"typescript": "npx ts-node",
+			// "typescript": "/home/linuxbrew/.linuxbrew/bin/node node_modules/.bin/ts-node",
 			"coffeescript": "coffee",
 			"scala": "scala",
 			"swift": "swift",

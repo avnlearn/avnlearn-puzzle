@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Search Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/katex/katex.min.css">
+
+</head>
+
+<body>
+    <!-- absolute right-0 w-1/2 h-screen -->
+    <div class="container print:hidden my-4">
+        <form class="grid gap-y-2 w-screen" id="Random_Question_form" onsubmit="RandMath_SubmitForm(event)">
+            <table>
+                <caption class="w-full bg-orange-200">Math Question Generator</caption>
+                <tr>
+                    <th>Level</th>
+                    <td><select name="level" id="level" class="bg-blue-600 px-10 text-white w-full text-center">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Types of Number :</th>
+                    <td><select name="name_of_number" id="name_of_number"
+                            class="bg-blue-600 px-10 text-white w-full text-center">
+                            <option value="N">N</option>
+                            <option value="Z">Z</option>
+                            <option value="F">F</option>
+                            <option value="D+">D<sup>+</sup></option>
+                            <option value="Q">Q</option>
+                            <option value="D">D</option>
+                            <!-- <option value="QD+">QD+</option> -->
+                            <!-- <option value="QD">QD</option> -->
+                            <option value="P+">P</option>
+                            <option value="P">P</option>
+                            <option value="T+">T+</option>
+                            <option value="T">T</option>
+                            <option value="RATIONALIZE">Rationalize</option>
+                            <option value="R+">R+</option>
+                            <option value="R">R</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="S">S</option>
+                            <option value="A">A</option>
+                            <option value="(A + B)**2"><span class="katex inline">(a + b)^2</span></option>
+                            <option value="A**2 + 2*A*B + B**2">a**2 + 2*a*b + b**2</option>
+                            <option value="(A + B)*(A - B)">(a + b)*(a - b)</option>
+                            <option value="(x + a)(x + b)">(x + a)(x + b)</option>
+                            <option value="x**2 + (a + b)*x + a*b">x**2 + (a + b)*x + a*b</option>
+                            <option value="Algebra_simplify">Algebra_simplify</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Operations</th>
+                    <td><select name="operation" id="operation" class="bg-blue-600 px-10 text-white w-full text-center">
+                            <option value="+">Addition</option>
+                            <option value="-">Subtraction</option>
+                            <option value="*">Multiplication</option>
+                            <option value="<<">Perfect Division</option>
+                            <option value="/">Division</option>
+                            <option value="**">Power</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Term</th>
+                    <td><input type="number" name="terms" id="terms" value="2" min="1" class="w-full"></td>
+                </tr>
+                <tr>
+                    <th>Double Side</th>
+                    <td><input type="checkbox" name="double_side" id="double_side"></td>
+                </tr>
+
+                <tr>
+                    <th>Number of Question</th>
+                    <td><input type="number" name="number_of_question" id="number_of_question" min="1" value="14"
+                            class="w-full"></td>
+                </tr>
+                <tr>
+                    <th>Number of Page</th>
+                    <td><input type="number" name="number_of_page" id="number_of_page" min="1" value="1" class="w-full">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Page Size</th>
+                    <td><select name="page_size" id="page_size" class="bg-blue-600 px-10 text-white w-full">
+                            <option value="a7">A7</option>
+                            <option value="a6">A6</option>
+                            <option value="a5">A5</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Header</th>
+                    <td class="grid gap-y-2">
+                        <input type="text" name="title" id="page_title" value="आधुनिक विद्या निकेतन ट्यूशन सेंटर"
+                            class="w-full bg-green-300 p-2 border-2 border-green-800" title="Title">
+                        <div class="flex w-full">
+                            <input type="text" name="name_tag" id="name_tag" value="नाम:"
+                                class="w-full bg-green-300 p-2 border-2 border-green-800" title="Name">
+                            <select name="header_added_option" id="page_title_option"
+                                class="bg-green-600 p-2 text-center" title="Added Header">
+                                <option value="all">All Page</option>
+                                <option value="even">Even Page</option>
+                                <option value="odd">Odd Page</option>
+                                <option value="disable">No Header</option>
+                            </select>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" value="Generator" class="border-2 px-2 hover:bg-green-200">
+                        <button id="randmath-show_ans" class="border-2 px-2">
+                            Show Answer
+                        </button>
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="container" class="grid grid-cols-3 max-md:grid-cols-1 mx-auto print:mx-0 print:block"></div>
+    <script src="./assets/katex/katex.js"></script>
+    <script src="./assets/js/randmath.js"></script>
+    <script src="./assets/js/app_randmath.js"></script>
+</body>
+
+</html>

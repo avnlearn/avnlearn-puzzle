@@ -1,13 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2015", // or "es6"
+    "target": "es2015", // or "es6" or "es2023"
     "lib": [
       "es2015",
       "dom"
-    ], // Include "es2015" to use modern JavaScript features
+    ],
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "resolveJsonModule": true, // Allows importing JSON files
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensures consistent casing in file names
+    "module": "commonjs", // Use "commonjs" or "esnext" based on your environment
+    "moduleResolution": "node" // Use "node" for Node.js-style module resolution
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules" // Exclude node_modules from compilation
+  ]
 }

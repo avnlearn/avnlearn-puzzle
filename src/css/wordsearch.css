@@ -1,0 +1,26 @@
+.wordsearch_pg {
+
+    @apply border-2 w-[74mm] h-[105mm] px-1 print:border-0 break-after-page;
+    .header {
+      @apply flex;
+      justify-content: space-between;
+      .title,
+      .page_no {
+        @apply text-center font-bold text-[8pt];
+      }
+    }
+  
+    .wordsearch_table {
+      @apply w-full text-[8pt] font-semibold my-0.5;
+      td {
+        @apply border text-center;
+        span {
+          @apply w-full inline-block;
+        }
+      }
+    }
+    .wordlist {
+      /* @apply flex gap-x-2 flex-wrap text-[8pt] font-bold; */
+      @apply grid grid-cols-3 text-center text-[8pt] font-semibold w-full;
+    }
+  }

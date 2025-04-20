@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  /* font-family: var(--font) !important; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 8pt; */
+  /* line-height: 1.2; */
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  @page {
+    /* size: A5 portrait; */
+    /* size: A5 landscape; */
+    /* size: A7; */
+    /* size: 74mm 105mm; */
+    /* size: 105mm 75mm ; */
+    /* size: 74mm 74mm; */
+    /* size: A6 landscape; */
+    size: A5;
+    /* size: 2.91in 4.13in; */
+    /* marks:crop; */
+    margin: 1.5mm;
+  }
+}
+
+@page {
+  margin-top: 4mm;
+  @top-center {
+    margin-top: 2mm;
+    writing-mode: horizontal-tb;
+    font-size: 9pt;
+    font-weight: bold;
+    content: "आधुनिक विद्या निकेतन ट्यूशन सेंटर - " counter(page);
+  }
+}
+
+:root {
+  font-size: 9pt;
+  /* font-size: 8pt; */
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+
+ul {
+  margin-top: 2mm;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  page-break-after: always;
+}
+
+ul[data-grid] {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+ul[data-grid="8"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ol {
+  line-height: 2 !important;
+  margin-top: 1mm;
+  margin-left: 7mm;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+ol > li::after {
+  content: " =";
+}
+
+ins {
+  display: none;
+}
+
+.ans ins {
+  display: inline;
+  text-decoration: none;
+}
+
+.ans ol > li::after {
+  content: "";
+}
+p{
+  margin-top: 2mm;
+}

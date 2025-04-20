@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  /* font-family: var(--font) !important; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 8pt; */
+  /* line-height: 1.2; */
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  @page {
+    /* size: A5 portrait; */
+    /* size: A5 landscape; */
+    /* size: A7; */
+    /* size: 74mm 105mm; */
+    /* size: 105mm 75mm ; */
+    /* size: 74mm 74mm; */
+    /* size: A6 landscape; */
+    size: A7;
+    /* size: 2.91in 4.13in; */
+    /* marks:crop; */
+    margin: 1.5mm;
+  }
+}
+
+@page {
+  margin-top: 2.5mm;
+  @top-center {
+    margin-top: 2mm;
+    writing-mode: horizontal-tb;
+    font-size: 8pt;
+    font-weight: bold;
+    content: "आधुनिक विद्या निकेतन ट्यूशन सेंटर - " counter(page);
+  }
+  margin-bottom: 3mm;
+  @bottom-left {
+    margin-bottom: 3mm;
+    writing-mode: horizontal-tb;
+    font-size: 8pt;
+    font-weight: bold;
+    content: "Name : .......................................................................";
+  }
+}
+
+:root {
+  font-size: 10pt;
+  /* font-size: 8pt; */
+  font-family: sans-serif;
+}
+
+ul {
+  margin-top: 2mm;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  page-break-after: always;
+}
+
+ul[data-grid] {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+ul[data-grid="8"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ol {
+  line-height: normal !important;
+  margin-top: 1mm;
+  margin-left: 7mm;
+}
+
+.answer {
+  display: none;
+}
+
+.ans .answer {
+  display: inline;
+  text-decoration: none;
+}
+
+
+.question_heading {
+  margin-top: 2mm;
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.page-break{
+  page-break-before: always;
+}

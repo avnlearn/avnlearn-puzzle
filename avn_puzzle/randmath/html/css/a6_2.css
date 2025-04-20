@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  /* font-family: var(--font) !important; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 8pt; */
+  /* line-height: 1.2; */
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  @page {
+    /* size: A5 portrait; */
+    /* size: A5 landscape; */
+    /* size: A7; */
+    /* size: 74mm 105mm; */
+    /* size: 105mm 75mm ; */
+    /* size: 74mm 74mm; */
+    /* size: A6 landscape; */
+    size: A6;
+    /* size: 2.91in 4.13in; */
+    /* marks:crop; */
+    margin: 1.5mm;
+  }
+}
+
+:root {
+  font-size: 9pt;
+  /* font-size: 8pt; */
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 5mm 5mm;
+}
+
+ol {
+  line-height: 2 !important;
+  margin-top: 1mm;
+  margin-left: 7mm;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.title_heading {
+  font-size: 8pt;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  /* page-break-before: always; */
+}
+
+.name {
+  display: block;
+  margin-top: 2mm;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.name::after {
+  content: " ...................................................................................................................";
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.answer {
+  display: none;
+}
+
+.ans .answer {
+  display: inline;
+}
+
+.ans .question {
+  display: none;
+}
