@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Search Generator</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <style>
+    @media print {
+      @page {
+        /* size: 74mm 100mm; */
+        size: 74mm 105mm;
+        margin: 0;
+      }
+
+      .sudoku_template {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container print:hidden">
+    <div class="grid gap-y-2">
+      <table>
+        <caption>Word Search</caption>
+        <tr>
+          <th>Types :</th>
+          <td><select name="wordsearch-generator_types" id="wordsearch-generator_types"
+              class="bg-blue-600 px-10 text-white">
+              <option value="english">English</option>
+              <option value="number">Numbers</option>
+              <option value="hindi">Hindi</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>Level :</th>
+          <td>
+            <select id="wordsearch-generator_level" class="bg-blue-600 text-white">
+              <option value="easy">Esay</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <div><button id="wordsearch-generator" class="border-2 px-2">
+                Generator
+              </button>
+              <button id="wordsearch-show_ans" class="border-2 px-2">
+                Show Answer
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="container" class="grid mx-auto print:mx-0"></div>
+  <script src="./assets/js/app_wordsearch.js"></script>
+</body>
+
+</html>
