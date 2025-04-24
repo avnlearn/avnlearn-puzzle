@@ -4,8 +4,10 @@ FROM python:3.8-slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the pyproject.toml file into the container
+COPY README.md .
 COPY pyproject.toml .
+COPY avn_puzzle ./avn_puzzle
+
 
 # Install flit
 RUN pip install flit

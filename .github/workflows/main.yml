@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: your-dockerhub-username/your-image-name:latest  # Replace with your Docker Hub username and image name
+        tags: avnlearn/avnlearn-server:latest  # Replace with your Docker Hub username and image name
 
     - name: Deploy to your server (optional)
       run: |
