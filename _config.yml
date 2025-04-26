@@ -1,0 +1,49 @@
+# Site settings
+title: AvN Learn Puzzle
+description: Puzzle Generator
+baseurl: "" # Leave empty for user site or set to a subpath if needed
+url: "http://localhost:4000" # Change this to your live site URL when deployed
+
+# Author information
+author:
+  name: Your Name
+  email: your.email@example.com
+
+# Build settings
+markdown: kramdown # Markdown processor
+theme: minima # You can change this to any theme you prefer
+
+# Plugins
+plugins:
+  - jekyll-feed # For RSS feed support
+  - jekyll-seo-tag # For SEO tags
+
+# Social media links
+social:
+  twitter: avnlearn
+  github: avnlearn
+  linkedin: avnlearn
+
+# Permalinks
+permalink: pretty # URL structure for posts
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - Vagrantfile
+  - src/
+  - tsconfig.js
+  - pyproject.toml
+  - avnlearn-puzzle.code-workspace
+  - app.py
+  - package-lock.json
+  - package.json
+  - Example/
+  - assets/
+  - avn_puzzle
+
+# Other settings
+livereload: true # Enable live reload when using `jekyll serve --livereload`

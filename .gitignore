@@ -1,6 +1,24 @@
+# Node.js dependencies
 node_modules/
+package-lock.json
+
+# Python virtual environment
 .venv/
 __pycache__/
+
+# Ruby dependencies
+Gemfile.lock
+
+# Vagrant files
+.vagrant/
+
+# Mix manifest for Laravel
 mix-manifest.json
-package-lock.json
+
+# Example directory (if it contains example files)
 Example/
+
+# Custom keys
+# Ignore custom configuration files
+custom-config.json
+_site/

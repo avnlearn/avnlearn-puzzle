@@ -33,12 +33,12 @@ function attachShowAnswer() {
   });
 }
 
-function words_types(){
+function words_types() {
   const words_type = (document.getElementById("wordsearch-generator_types") as HTMLSelectElement).value;
   switch (words_type) {
     case "english":
       return [sample(wordlist, 20), "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
-      // break;
+    // break;
     case "number":
       return [RandomStringNumberListByDigit(20), "0123456789".split("")];
     default:
